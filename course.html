@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="logo.png"></a>
+            <div class="nav-link" id="navlink">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Our Courses</h1>
+    </section>
+<!-- Course -->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>There are 240 courses available at the university for undergraduate (UG) and post-graduate (PG).</p>
+    <div class="row">
+        <div class="course-column">
+            <h3>Intermediate</h3>
+            <p>There are a total 201 courses offered by Delhi University like MBBS, BTech etc. 
+                Courses are mainly classified under the three faculties of the central university, including arts, commerce and science.</p>
+        </div>
+        <div class="course-column">
+            <h3>Degree</h3>
+            <p>The university offers PhD courses, which may be awarded by any faculty of the university under ordinance VI-B.
+                 But, speciality and super speciality medical degrees like DM, DCh etc., </p>
+        </div>
+        <div class="course-column">
+            <h3>Post-Graduation</h3>
+            <p>The university offers 70 post-graduate degrees. DU also offers MPhil in about 28 subjects. In addition to these,
+                 it offers 90+ Certificate courses and 28 Diplomas. There are 15 Advanced Diplomas offered in various languages</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Facilittes -->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Some colleges of Delhi University offer hostel facilities to students but this facility is limited to a specific number of colleges. 
+        The allotment of hostels is also done on a merit basis. Only 20 colleges of Delhi University provide hostel facilities to students.</p>
+    <div class="row">
+        <div class="facilities-column">
+            <div class="lib">
+                <img src="library1.jpg">
+            </div>
+            <h3>World Class Library</h3>
+            <p> Welcome to Delhi University Library System (DULS). Having more than 37 libraries in its fold, the DULS is accomplishing its task of
+                 reaching to wider academic community. 
+                We have advanced our web activity with the subscription of as good as 64 
+                high quality electronic databases being made available through campus network to teachers, students and research scholars. </p>
+
+        </div>
+        <div class="facilities-column">
+            <img src="basketball.png">
+            <h3>Largest Playground</h3>
+            <p> Hansraj College. Hansraj College is one of the oldest colleges of DU, located in North Campus. 
+                They have a huge sports ground and a basketball court.</p>
+
+        </div>
+        <div class="facilities-column">
+            <img src="cafeteria.png">
+            <h3>Tasty And Healthy Food</h3>
+            <p>Hans Raj College is often considered to be one of the best DU canteens. It is also one of the largest DU canteens which can accommodate more than 150 students. 
+                Canteen is esteemed for its reasonably priced and hygienic food. You can enjoy South Indian, Chinese, North Indian food, snacks and beverages.</p>
+
+        </div>
+    </div>
+
+</section>
+   
+   <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>The University of Delhi, informally known as Delhi University.
+            It was founded in 1922 by an Act of the Central Legislative Assembly and is recognized as an Institute of Eminence by the University Grants Commission.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p><i class="fa fa-copyright"></i>
+            Copyright portfolio of kartik tanwar</p>
+
+    </section>
+
+
+
+
+
+    <!-- javascript foe toggle -->
+
+    <script>
+
+        var navlink = document.getElementById("navlink")
+        function showmenu() {
+            navlink.style.right = "0";
+
+        }
+        function hidemenu() {
+            navlink.style.right = "-200px";
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="logo.png"></a>
+            <div class="nav-link" id="navlink">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us </h1>
+    </section>
+
+    <!-- contact us -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/dir/28.5190313,77.2060241/du/@28.554255,77.1504573,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390d1d11d2b09007:0x853501a569b49e3c!2m2!1d77.1638282!2d28.5842523"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- home -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-column">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Benito Juarez Marg, South Campus,</h5>
+                        <p> South Moti Bagh, New Delhi, Delhi 110021</p>
+                    </span>
+                </div>
+                <!-- phone -->
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5> 011 2700 6900</h5>
+                        <p>Monday-Sunday Open 24 hours</p>
+                    </span>
+                </div>
+
+
+                <!--  envelope-->
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5> dean_ir@du.ac.in.</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="contact-column">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter email">
+                    <input type="text" placeholder="Enter Your Subject">
+                    <textarea rows="8" placeholder="Message"></textarea>
+                    <button type="submit" class="btn2">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>The University of Delhi, informally known as Delhi University.
+            It was founded in 1922 by an Act of the Central Legislative Assembly and is recognized as an Institute of Eminence by the University Grants Commission.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p><i class="fa fa-copyright"></i>
+            Copyright portfolio of kartik tanwar</p>
+
+    </section>
+
+
+
+
+
+    <!-- javascript foe toggle -->
+
+    <script>
+
+        var navlink = document.getElementById("navlink")
+        function showmenu() {
+            navlink.style.right = "0";
+
+        }
+        function hidemenu() {
+            navlink.style.right = "-200px";
+
+        }
+
+    </script>
+</body>
+
+</html>
